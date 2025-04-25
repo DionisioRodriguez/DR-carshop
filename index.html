@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR-carshop</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="container-superior">
+        <div class="busqueda-container">
+          <form action="">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="search" placeholder="¿Que estas buscando?...">
+          </form>
+        </div>
+        <div class="img-container">
+          <a href="#">
+            <img class="navbar-logo" src="/img/logo-chico.png" alt="">
+          </a>
+        </div>
+        <div class="carrito-container">
+          <a class="carrito-container-link" href="#">
+            <button id="carrito" class="carrito-container-button"><i class="fa-solid fa-cart-shopping"></i></button>
+            <p class="carrito-container-cantidad">0</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="carrito-productos--container hidden-cart">
+        <!-- Carrito que va a ser con JS -->
+        <div class="carrito-titulo--container">
+          <h3>Carrito de compras</h3>
+          <button class="carrito-cerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="carrito-categoria--container">
+          <p>Producto</p>
+        </div>
+
+        <div id="contenedor-productos">
+          <!-- Aca van todos los productos añadidos al carrito -->
+          <div id="productos" class="carrito-producto-card--container">
+            <div class="carrito-producto-card-img--container">
+              <img src="/img/shampoo/atomic.webp" alt="">
+            </div>
+            <div class="carrito-producto-card-cantidad--container">
+              <div class="carrito-producto-card-titulo">
+                <h3>Atomic</h3>
+                <div class="carrito-producto-card-cantidad">
+                  <i class="fa-solid fa-minus"></i>
+                  <p>0</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="carrito-producto-card-precio">
+                <p>$15.000,00</p>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carrito-total">
+          <h3>Total:</h3>
+          <p>$15.000</p>
+        </div>
+      </div>
+
+      <ul class="list-item">
+        <li class="item"><a href="#">Inicio</a></li>
+        <li class="item"><a href="/assets/productos.html">Productos</a></li>
+        <li class="item"><a href="/assets/contacto.html">Contacto</a></li>
+        <li class="item"><a href="/assets/productoSeleccionado.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- Presentacion de los diferentes tipos de PRODUCTOS -->
+      <div class="categoria-banner-titulo-container">
+        <h2>Todas nuestras categorias de productos</h2>
+        <p>Somos punto de venta oficial de la marca <span>TOXIC SHINE</span></p>
+      </div>
+      <div class="banner-banner">
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/shampoo/img-shampoo-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Shampoo</h2>
+                <p class="banner-parrafo">Limpia y cuida tu pintura</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/ceras/img-cera-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Ceras rapidas</h2>
+                <p class="banner-parrafo">El brillo no se negocia</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/limpiadores/img-limpiador-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Limpiadores</h2>
+                <p class="banner-parrafo">Retira hasta la suciedad mas añeja</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/perfumes/img-perfumes-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Perfumes</h2>
+                <p class="banner-parrafo">Los mejores aromas para vos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/rev-interior/img-interior-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Revividor interior</h2>
+                <p class="banner-parrafo">Lo mejor para tus plasticos interiores</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/rev-exterior/img-exterior-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Revividor exterior</h2>
+                <p class="banner-parrafo">Tus cubiertas y plasticos exteriores mas brillantes</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/aerosol/img-aerosol-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Aerosoles</h2>
+                <p class="banner-parrafo">Lo mejor de ambos mundos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/accesorio/img-accesorio-banner .png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Accesorios de lavado</h2>
+                <p class="banner-parrafo">El mejor apoyo para tu vehiculo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/aromatizante/img-aromatizante-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Aromatizantes</h2>
+                <p class="banner-parrafo">Los mejores aromas para tu vehiculo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="banner-container">
+            <a class="banner-link" href="/assets/productos.html">
+              <div class="banner-img-container">
+                <img class="banner-img" src="/img/bidon/img-bidon-banner.png" alt="">
+              </div>
+              <div class="banner-text">
+                <h2 class="banner-titulo">Bidones</h2>
+                <p class="banner-parrafo">Lo mejor y con mas cantidad</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <!-- Carrusel de algunos productos -->
+      <h2></h2>
+      <div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Link para ir al instagram -->
+      <div>
+        <i class="bi bi-instagram"></i>
+        <div>
+          <h3>Seguinos en instagram</h3>
+          <a href="https://www.instagram.com/dr_carshop/"><span>DR-CarShop</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/8f8394d7da.js" crossorigin="anonymous"></script>
+  <script src="/scrpits/carrito.js"></script>
+
+</body>
+</html>

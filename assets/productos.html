@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DR-carshop</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="container-superior">
+        <div class="busqueda-container">
+          <form action="">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="search" placeholder="¿Que estas buscando?...">
+          </form>
+        </div>
+        <div class="img-container">
+          <a href="/index.html">
+            <img class="navbar-logo" src="/img/logo-chico.png" alt="">
+          </a>
+        </div>
+        <div class="carrito-container">
+          <a class="carrito-container-link" href="#">
+            <button id="carrito" class="carrito-container-button"><i class="fa-solid fa-cart-shopping"></i></button>
+            <p class="carrito-container-cantidad">0</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="carrito-productos--container hidden-cart">
+        <!-- Carrito que va a ser con JS -->
+        <div class="carrito-titulo--container">
+          <h3>Carrito de compras</h3>
+          <button class="carrito-cerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="carrito-categoria--container">
+          <p>Producto</p>
+        </div>
+        
+        <div id="contenedor-productos">
+          <!-- Aca van todos los productos añadidos al carrito -->
+          <div id="productos" class="carrito-producto-card--container">
+            <div class="carrito-producto-card-img--container">
+              <img src="/img/shampoo/atomic.webp" alt="">
+            </div>
+            <div class="carrito-producto-card-cantidad--container">
+              <div class="carrito-producto-card-titulo">
+                <h3>Atomic</h3>
+                <div class="carrito-producto-card-cantidad">
+                  <i class="fa-solid fa-minus"></i>
+                  <p>0</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="carrito-producto-card-precio">
+                <p>$15.000,00</p>
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carrito-total">
+          <h3>Total:</h3>
+          <p>$15.000</p>
+        </div>
+      </div>
+
+      <ul class="list-item">
+        <li class="item"><a href="/index.html">Inicio</a></li>
+        <li class="item"><a href="#">Productos</a></li>
+        <li class="item"><a href="/assets/contacto.html">Contacto</a></li>
+        <li class="item"><a href="/assets/catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="productos-productos--container-superior">
+    <div class="productos-imagen--container">
+      <img src="/img/banners/img-productos.webp" alt="">
+    </div>
+    <h1 id="titulo-principal">Todos los productos</h1>
+    <p id="parrafo-principal">Los mejores productos de lavado y estetica automotriz</p>
+  </section>
+
+  <div class="productos-productos--container">
+
+    <div class="categoria-productos--container">
+      <div class="search--container">
+        <p>Ordenar por</p>
+        <select name="" id="">
+          <option value="price-ascending">Precio: Menor a Mayor</option>
+          <option value="price-descending">Precio: Mayor a Menor</option>
+        </select>
+      </div>
+
+      <aside class="productos-productos-categoria--container">
+        <header>
+          <div>
+            <h3>Categorias</h3>
+          </div>
+          <ul>
+            <li><button class="boton-categoria active" id="todos">Todos los productos</button></li>
+            <li><button class="boton-categoria" id="ceras">Ceras rapidas</button></li>
+            <li><button class="boton-categoria" id="lavaAutos">Shampoo/Lava autos</button></li>
+            <li><button class="boton-categoria" id="limpiadores">Limpiadores</button></li>
+            <li><button class="boton-categoria" id="revExteriores">Revividores exteriores</button></li>
+          </ul>
+        </header>
+      </aside>
+    </div>
+
+    <main class="main-productos">
+      <div class="productos-container">
+        <!-- ACA VAN A ESTAR TODOS LOS PRODCUTOS CON JS -->
+      </div>
+    </main>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/8f8394d7da.js" crossorigin="anonymous"></script>
+  <script src="/scrpits/carrito.js"></script>
+  <script src="/scrpits/main.js"></script>
+
+</body>
+</html>
