@@ -282,17 +282,17 @@ display: none;
 
 .item {
   font-size: 15px;
-  padding: 8px 12px;
-  border-radius: 20px;
   transition: 0.3s ease-out;
+  padding: 5px 0;
 }
-.item:hover {
-  background: #ebebeb;
-  transition: 0.5s;
-}
-
 .item a {
   color: #000;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+.item a:hover {
+  background: #ebebeb;
+  transition: 0.5s;
 }
 
 /* Parte del MAIN */
