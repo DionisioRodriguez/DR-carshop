@@ -17,6 +17,7 @@ const Productos = [
     titulo: "Extrem detail",
     imagen: "/img/ceras/extreme-detail.webp",
     precio: 6900,
+    especificacion: 'Extreme Detail es un quick detailer formulado para brindar un brillo intenso y protección duradera. Este producto innovador puede ser utilizado tanto en húmedo como en seco, lo que lo convierte en una herramienta versátil para el cuidado de tu vehículo. Es ideal para remover el polvillo o las marcas de nanos en la pintura, dejándola protegida, brillosa e impecable. Además, su agradable aroma a durazno hará que disfrutes aún más del proceso de lavado!',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
@@ -27,60 +28,66 @@ const Productos = [
     titulo: "Waterless",
     imagen: "/img/ceras/waterless.webp",
     precio: 6900,
+    especificacion: 'Limpiador en Seco formulado para suspender la Suciedad del Vehículo y poder realizar una limpieza sin necesidad de utilizar agua.Contiene Agentes Lubricantes y Ceras que permiten dejar la Superficie Limpia y Brillante en un solo uso',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "cera-04",
     titulo: "Ilusion wax",
     imagen: "/img/ceras/ilussion-wax.webp",
     precio: 8700,
+    especificacion: 'Quick Detailer formulado en base a Cera Carnauba en un Gran Procentaje.Otorga un Excelente Brillo Húmedo (Wet Look) y Protege el Vehículo.Gran Repelencia al Agua.Filtra Rayos UV.Profundiza el Color del Vehículo.Recomendado para un Fácil Mantenimiento de Tratamientos Acrílicos',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "cera-05",
     titulo: "The bo$$",
     imagen: "/img/ceras/the-boss-shine.webp",
     precio: 8700,
+    especificacion: 'Revolucionario sellador a base de resinas y sílice. Duración estimada de 2 a 4 meses, con correcto cuidado. Usado para mantenimiento o booster de tratamientos',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "cera-06",
     titulo: "Lava crush",
     imagen: "/img/ceras/lava-crush.webp",
     precio: 8900,
+    especificacion: 'Lava Crush es un sellador diseñado para proteger la pintura del vehiculo. Su formula de polimeros siliconados, fluoropolimeros y resinas nos aseguran el maximo brillo combinados con una repelencia al agua y suavidad al tacto.Luego del lavado se aplica con ayuda de 2 microfibras, una para esparcir y otra para retirar',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "cera-07",
     titulo: "Energy seal",
     imagen: "/img/ceras/energy-seal.webp",
     precio: 8700,
+    especificacion: 'Sellador formulado para proteger la pintura.Formulado a base de nanotecnología garantizando protección y brillo. Otorga un excelente brillo húmedo (wet look) y protege el vehículo. Gran repelencia al agua.Filtra rayos UV, profundiza el color del vehículo.Recomendado como booster para un fácil mantenimiento de tratamientos.Modo de uso: Agitar el producto. Rociar sobre la microfibra o superficie a trabajar. Utilizar la microfibra 1 para aplicarlo (1 panel a la vez). Utilizar la microfibra 2 para retirar el excedente y revelar el brillo. Realizar la aplicación un panel a la vez hasta completar el vehículo. No aplicar en vidrios y plásticos. Sí aplicable en llantas.',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "cera-09",
     titulo: "Seal it all",
     imagen: "/img/ceras/seal-it-all.webp",
     precio: 11700,
+    especificacion: 'Sellador de caracter polifuncional capaz de sellar cualquier tipo de superficie (pintura, vidrios, llantas, plasticos, cromados) duracion estimada 4 meses',
     categoria: {
       nombre: "Ceras",
       id: "ceras",
-      imagen: "/img/img-ceras.png"
+      imagen: "/img/banners/img-ceras.png"
     }
   },{
     id: "shampoo-01",
@@ -91,7 +98,7 @@ const Productos = [
       nombre: "Shampoo",
       especificacion: 'Todos los lava autos PH cuidan y alargan la vida útil de la laca y tratamientos.',
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-02",
@@ -101,7 +108,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-03",
@@ -111,7 +118,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-04",
@@ -121,7 +128,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-05",
@@ -131,7 +138,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-06",
@@ -141,7 +148,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-07",
@@ -151,7 +158,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-08",
@@ -161,7 +168,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-09",
@@ -171,7 +178,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "shampoo-10",
@@ -181,7 +188,7 @@ const Productos = [
     categoria: {
       nombre: "Shampoo",
       id: "lavaAutos",
-      imagen: "/img/img-shampoo.png"
+      imagen: "/img/banners/img-shampoo.png"
     }
   },{
     id: "limpiadores-01",
