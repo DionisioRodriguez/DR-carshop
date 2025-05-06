@@ -133,8 +133,8 @@ nav {
 
 /* Parte del carrito con JS */
 
-.hidden-cart {
-display: none;
+.hidden-cart, .hidden-producto-info {
+  display: none;
 }
 
 .carrito-productos--container {
@@ -507,14 +507,10 @@ main {
   align-items: center;
   max-width: 230px;
   margin-bottom: 60px;
+  text-align: center;
 }
 .producto-card img {
   width: 100%;
-}
-.producto-card div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .producto-card h2 {
   font-family: 'Montserrat', sans-serif;
@@ -529,6 +525,17 @@ main {
   font-size: 17px;
   color: #292929;
 }
+.producto-card button {
+  background: #2c62e1;
+  width: 30%;
+  height: 25px;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
 
 .active {
   border-bottom: 1px solid #919191;
@@ -536,11 +543,16 @@ main {
 
 /* Apartado de PRODUCTO seleccionado */
 
+.producto-seleccionado-info {
+  position: relative;
+}
+
 .producto-seleccionado--container {
   display: flex;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 .producto-seleccionado-izquierdo {
   display: flex;
